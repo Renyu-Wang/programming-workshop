@@ -25,6 +25,7 @@ To be covered in first seesion
 - Makefile
   - Makefile is a shortcut for all kinds of commands. It appears everywhere.
   - [introduction](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+  
 to be covered in second session
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
@@ -37,3 +38,18 @@ to be covered in second session
 - C++
   - [Quick compilation with multiple files](https://www.cs.fsu.edu/~myers/c++/notes/compilation.html)
   - comment style with [Doxygen](https://www.doxygen.nl/index.html)
+
+to be covered in third session
+- Random Window decoder
+  - build a c++ project with random window decoder
+
+  
+Optional if more session are available
+- [Docker](https://www.docker.com/)
+  - Debug the program, instead of the environment.
+- [Gitpod](https://www.gitpod.io/)
+  - Bring docker online
+- [GitHub Action](https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action)
+  - Automation with docker
+  - Example: generate doxygen document for a C++ repo automatically
+  
