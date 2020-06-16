@@ -7,6 +7,7 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
 
 
 ## Content
+To be covered in first seesion
 - HPCC
   - HPCC is the cluster computer at UCR. Before the workshop, try to
     finish the following two steps to make sure you can access it
@@ -24,6 +25,7 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
 - Makefile
   - Makefile is a shortcut for all kinds of commands. It appears everywhere.
   - [introduction](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+to be covered in second session
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
   - [Git](https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395)
