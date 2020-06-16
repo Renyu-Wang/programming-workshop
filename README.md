@@ -52,4 +52,5 @@ Optional if more session are available
 - [GitHub Action](https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action)
   - Automation with docker
   - Example: generate doxygen document for a C++ repo automatically
-  
+- [Github Page](https://pages.github.com/)
+  - A static website to present your repo
