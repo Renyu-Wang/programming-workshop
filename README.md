@@ -7,7 +7,7 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
 
 
 ## Content
-To be covered in first seesion
+### Session 1: Linux basics
 - HPCC
   - HPCC is the cluster computer at UCR. Before the workshop, try to
     finish the following two steps to make sure you can access it
@@ -26,7 +26,8 @@ To be covered in first seesion
   - Makefile is a shortcut for all kinds of commands. It appears everywhere.
   - [introduction](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
   
-to be covered in second session
+
+### session 2: Git-related and C++ coding style
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
   - [Git](https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395)
@@ -39,12 +40,13 @@ to be covered in second session
   - [Quick compilation with multiple files](https://www.cs.fsu.edu/~myers/c++/notes/compilation.html)
   - comment style with [Doxygen](https://www.doxygen.nl/index.html)
 
-to be covered in third session
+
+### session 3: Try a real project.
 - Random Window decoder
-  - build a c++ project with random window decoder
+  - build a C++ project with random window decoder
 
   
-Optional if more session are available
+### Session 4: Some fancy trick (optional)
 - [Docker](https://www.docker.com/)
   - Debug the program, instead of the environment.
 - [Gitpod](https://www.gitpod.io/)
