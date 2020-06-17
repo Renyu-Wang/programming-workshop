@@ -15,12 +15,21 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
   - [obtain an account](https://hpcc.ucr.edu/rates.html)
   - [get started](https://hpcc.ucr.edu/manuals_linux-cluster_start.html)
   - a tip: [ssh without pasword](http://www.linuxproblem.org/art_9.html)
+  - job management
+  - parallel computing with openmp
+    - e.g. parfor in c++, gap, matlab, python, etc
+  - nodes specification
+    - `sinfo`
+	- https://dashboard.hpcc.ucr.edu
   - Everything else in this workshop shall work in any unix-like
     environment. But usually we rely on the computing power of HPCC to
     do heavy calculations.
 - Editor and Window management
   - [emacs](https://ccrma.stanford.edu/guides/package/emacs/emacs.html)
+    - `emacs --daemon` and `emacsclient`
   - [tmux](https://tmuxcheatsheet.com/)
+    - `.tmux.conf`
+	- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) save window layout
   - VS Code and rmate (not to be covered here)
 - Makefile
   - Makefile is a shortcut for all kinds of commands. It appears everywhere.
