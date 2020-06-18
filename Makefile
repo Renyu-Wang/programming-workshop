@@ -1,13 +1,17 @@
 #=============      task commands        ================
+#submit job
 sbatch:
 	sbatch sbatch.sh
+# for test: submit but not run
 sbatch-dry-run:
 	sbatch --test sbatch.sh
 
 
 #=============      hpcc commands        ================
+#start interactive session
 srun:
-	srun --mem=16G --ntasks=1 --cpus-per-task=16 --time=0-08:00:00 --mail-user=wzeng002@ucr.edu --mail-type=ALL,TIME_LIMIT_80,TIME_LIMIT_90 --export=ALL,ON_SRUN=TRUE -p batch,intel --pty zsh -l 
+	srun --mem=16G --ntasks=1 --cpus-per-task=16 --time=0-08:00:00 --mail-user=wzeng002@ucr.edu --mail-type=ALL,TIME_LIMIT_80,TIME_LIMIT_90 --export=ALL,ON_SRUN=TRUE -p batch,intel --pty zsh -l
+#start interactive session on short partition when HPCC is busy
 srun-short:
 	srun --mem=64G --ntasks=1 --cpus-per-task=64 --time=0-02:00:00 --mail-user=wzeng002@ucr.edu --mail-type=ALL,TIME_LIMIT_80,TIME_LIMIT_90 --export=ALL,ON_SRUN=TRUE -p short,batch,intel --pty zsh -l 
 #--X11

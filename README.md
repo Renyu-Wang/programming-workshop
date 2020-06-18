@@ -5,9 +5,14 @@ efficiency, including git/github, emacs, tmux, Makefile,
 oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
 
 
-
 ## Content
-### Session 1: Linux basics
+### Material
+- All material are saved or linked in this repo. To download it, run
+`git clone https://github.com/QEC-pages/programming-workshop.git`
+or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- To synchronize the update, run `git pull` within the folder
+
+### Session 1: HPCC basics
 - HPCC
   - HPCC is the cluster computer at UCR. Before the workshop, try to
     finish the following two steps to make sure you can access it
@@ -15,15 +20,17 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
   - [obtain an account](https://hpcc.ucr.edu/rates.html)
   - [get started](https://hpcc.ucr.edu/manuals_linux-cluster_start.html)
   - a tip: [ssh without pasword](http://www.linuxproblem.org/art_9.html)
-  - job management
+  - [job management](https://ccrma.stanford.edu/guides/package/emacs/emacs.html)
   - parallel computing with openmp
-    - e.g. parfor in c++, gap, matlab, python, etc
+    - e.g. parfor in [c++](https://medium.com/swlh/introduction-to-the-openmp-with-c-and-some-integrals-approximation-a7f03e9ebb65), gap, matlab, python, etc
   - nodes specification
     - `sinfo`
 	- https://dashboard.hpcc.ucr.edu
   - Everything else in this workshop shall work in any unix-like
     environment. But usually we rely on the computing power of HPCC to
     do heavy calculations.
+	
+### Session 2: Linux basics
 - Editor and Window management
   - [emacs](https://ccrma.stanford.edu/guides/package/emacs/emacs.html)
     - `emacs --daemon` and `emacsclient`
