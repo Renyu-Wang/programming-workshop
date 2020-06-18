@@ -1,0 +1,6 @@
+## add the following line to .bashrc or .bash_profile to load .bash_aliases
+## for zsh, add it to .zshrc
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
