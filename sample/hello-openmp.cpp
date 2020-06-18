@@ -21,10 +21,14 @@ void myFunc(int t=1){
 void test1(){
 
 #pragma omp parallel for num_threads(4)
-  //  #pragma omp parallel for
+  // #pragma omp parallel for
   for (int i = 0; i < 10; i++)
     {
       myFunc(i);
+#pragma omp critical
+      {
+	//file IO
+      }
     }
   return;
 }
