@@ -11,6 +11,7 @@ oh-my-zsh. There are also some optional topics like VS Code, Docker, auctex.
 `git clone https://github.com/QEC-pages/programming-workshop.git`
 or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 - To synchronize the update, run `git pull` within the folder
+  - If you have edited files locally, `git pull` may produce a conflict. Before learning `git`, a work-around is running `git clone ...` in a new empty folder.
 
 ### Session 1: HPCC basics
 - HPCC
@@ -33,17 +34,24 @@ or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](http
 ### Session 2: Linux basics
 - Editor and Window management
   - [emacs](https://ccrma.stanford.edu/guides/package/emacs/emacs.html)
+    - `emacs filename` open file
+	- `C-x C-s` save 
+	- `C-x C-c` exit
     - `emacs --daemon` and `emacsclient`
   - [tmux](https://tmuxcheatsheet.com/)
+	- `module load tmux`
+	- `tmux` start a new seesion
+	- `tmux a` attach to previous session
     - `.tmux.conf`
 	- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) save window layout
   - VS Code and rmate (not to be covered here)
 - Makefile
-  - Makefile is a shortcut for all kinds of commands. It appears everywhere.
+  - Makefile is a shortcut for all kinds of commands.
   - [introduction](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+  - see examples in this repo
   
 
-### session 2: Git-related and C++ coding style
+### session 3: Git-related and C++ coding style
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
   - [Git](https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395)

@@ -1,4 +1,7 @@
 #include <iostream>
+
+// depends on the version of Eigen, one might switch between the following two lines
+// `module load eigen` is needed on HPCC
 //#include <eigen3/Eigen/Dense>
 #include <Eigen/Dense>
 

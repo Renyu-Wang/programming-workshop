@@ -3,3 +3,5 @@ This is a testing (or maybe working) directory of the itpp container. Files modi
 
 to run a test, try
 `make test`
+
+see `Makefile` for detail
