@@ -19,7 +19,7 @@ group_info:
 nodes_info:
 	sinfo
 job_status:
-	scontrol show job 1265309
+	scontrol show job 1585291
 job_list:
 	squeue -u $(USER) --start
 job_history:
