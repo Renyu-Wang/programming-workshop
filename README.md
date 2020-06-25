@@ -37,18 +37,19 @@ or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](http
     - `emacs filename` open file
 	- `C-x C-s` save 
 	- `C-x C-c` exit
-    - `emacs --daemon` and `emacsclient`
+    - `.emacs` see [sameple](config/.emacs)
+    - `emacs --daemon` and `emacsclient` [read more](https://www.emacswiki.org/emacs/EmacsClient)
   - [tmux](https://tmuxcheatsheet.com/)
 	- `module load tmux`
 	- `tmux` start a new seesion
 	- `tmux a` attach to previous session
-    - `.tmux.conf`
+    - `.tmux.conf` see [sample](config/.tmux/conf)
 	- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) save window layout
-  - VS Code and rmate (not to be covered here)
+  - VS Code and rmate (not to be covered here, HPCC is not VS Code-friendly)
 - Makefile
   - Makefile is a shortcut for all kinds of commands.
   - [introduction](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
-  - see examples in this repo
+  - see [example 1](Makefile) and [example 2](sample/Makefile)
   
 
 ### session 3: Git-related and C++ coding style
