@@ -64,14 +64,20 @@ or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](http
 - C++
   - [Quick compilation with multiple files](https://www.cs.fsu.edu/~myers/c++/notes/compilation.html)
   - comment style with [Doxygen](https://www.doxygen.nl/index.html)
+- Homework
+  - Send a pull request to this repo [programming workshop](https://github.com/QEC-pages/programming-workshop), where you don't have write access
+  - Make some commit and create a new branch in this repo [min weight decoder](https://github.com/QEC-pages/min-weight-decoder), where you should have been granted write access
+  - Optional: write a min weight decoder for the Hamming code, classical [7,4,3] first, and then quantum [[7,1,3]] 
 
 
-### session 3: Try a real project.
+
+### session 4: Try a real project.
+- Min weight decoder
 - Random Window decoder
   - build a C++ project with random window decoder
 
   
-### Session 4: Some fancy trick (optional)
+### Session 5: Some fancy trick (optional)
 - [Docker](https://www.docker.com/)
   - Debug the program, instead of the environment.
 - [Gitpod](https://www.gitpod.io/)
