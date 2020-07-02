@@ -56,6 +56,16 @@ or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](http
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
   - [Git](https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395)
+```shell
+mkdir my-first-repo
+cd my-first-repo
+git init
+echo "hello git" >> README.md
+git add README.md
+git commit -m "my first commit"
+git status
+git log
+```
   - [GitHub](https://github.com/QEC-pages) We will create several repos in the QEC-pages to demonstrate how to collaborate through branches and pull requests.
     - issue, [ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), [release](https://help.github.com/en/enterprise/2.13/user/articles/creating-releases)
 - oh-my-zsh
