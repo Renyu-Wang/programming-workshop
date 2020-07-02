@@ -56,6 +56,7 @@ or `git clone git@github.com:QEC-pages/programming-workshop.git` with [ssh](http
 - Git/GitHub
   - `git` is a version control software, and github is one of the online hosts.
   - [Git](https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395)
+   - basic commands
 ```shell
 mkdir my-first-repo
 cd my-first-repo
@@ -63,21 +64,41 @@ git init
 echo "hello git" >> README.md
 git add README.md
 git commit -m "my first commit"
+```
+   - show info
+```
 git status
 git log
+git config --list
 ```
+   - you might need to set up name and email
+```
+git config --global user.name "Some Name"
+git config --global user.email "Some@email.com"
+```
+
   - [GitHub](https://github.com/QEC-pages) We will create several repos in the QEC-pages to demonstrate how to collaborate through branches and pull requests.
-    - issue, [ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), [release](https://help.github.com/en/enterprise/2.13/user/articles/creating-releases)
+    - issue, pull request, [ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), [release](https://help.github.com/en/enterprise/2.13/user/articles/creating-releases)
+	- Edit GitHub repo locally
+```
+git clone ...
+git push
+```
+	- Move your local repo to GitHub
+	  - This happen when the code or repo is already on your local machine
+	  - Create an empty repo on Github and then you will see the instruction there.
+	  
+
 - oh-my-zsh
   - [homepage](https://ohmyz.sh/)
-  - `oh-my-zsh` is a version of `zsh`, an ultimate alternative to `bash`. It is very helpful when working in a git repo.
+  - `oh-my-zsh` is a version of `zsh`, an ultimate alternative to `bash`. It helps to work with git in terminal.
   - we will also make use of `~/.bashrc` and similar files here.
 - C++
   - [Quick compilation with multiple files](https://www.cs.fsu.edu/~myers/c++/notes/compilation.html)
   - comment style with [Doxygen](https://www.doxygen.nl/index.html)
 - Homework
-  - Send a pull request to this repo [programming workshop](https://github.com/QEC-pages/programming-workshop), where you don't have write access
-  - Make some commit and create a new branch in this repo [min weight decoder](https://github.com/QEC-pages/min-weight-decoder), where you should have been granted write access
+  - Send a pull request to this repo [programming workshop](https://github.com/QEC-pages/programming-workshop), where you don't have write access. (e.g. fix some typo, add a link to s resource page, or improving the text format.)
+  - Make some commit and create a new branch in this repo [min weight decoder](https://github.com/QEC-pages/min-weight-decoder), where you should have been granted write access.
   - Optional: write a min weight decoder for the Hamming code, classical [7,4,3] first, and then quantum [[7,1,3]] 
 
 
