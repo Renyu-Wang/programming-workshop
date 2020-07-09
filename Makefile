@@ -56,7 +56,7 @@ cherenkov-vpn:
 	ssh -D 7777 weileizeng@cherenkov.dyn.ucr.edu
 # connect to biocluster in UC Riverside
 hpcc:
-	ssh wzeng002@cluster.hpcc.ucr.edu
+	ssh rwang182@cluster.hpcc.ucr.edu
 #the domain name changed from biocluster to cluster.hpcc in 2019
 #-v  debug mode
 #-Y enable x11 forwarding
