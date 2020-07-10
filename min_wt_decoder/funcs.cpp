@@ -35,9 +35,9 @@ itpp::GF2mat write_h(int r2, int n2){
 //by weilei
 itpp::GF2mat nullSpace(itpp::GF2mat G){
     itpp::GF2mat T,U; itpp::ivec P;
-    int n=G.cols();
+    int t=G.cols();
     int rank_of_G = G.transpose().T_fact(T,U,P);
     //  itpp::GF2matPrint(T,"T");
-    itpp::GF2mat Q=T.get_submatrix(rank_of_G,0,n-1,n-1);
+    itpp::GF2mat Q=T.get_submatrix(rank_of_G,0,t-1,t-1);
     return Q;
 }

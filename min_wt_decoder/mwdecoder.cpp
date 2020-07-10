@@ -40,19 +40,35 @@ int main(int argc, char **argv){
     std::cout << "syndrome is " << s << " = " << syn << "\n"; 
 
     //find one error according to the syndrome
-    itpp::GF2mat er(1,n);
-    er = itpp::operator*(syn,h);
-    //std::cout << "one coresponding error is " << er << "\n";
+    itpp::GF2mat er(1,n), htemp(r,n+1), ermat(k+1,n+1);
+    itpp::bvec syntra(r);
+    for (int l = 0; l < n; l++){
+        htemp.set_col(l, h.get_col(l));
+    }
+    syntra = syn.get_row(0);
+    htemp.set_col(n, syntra);
+    ermat = nullSpace(htemp);
+    if (ermat(k,n) == 1){
+        for (int x = 0; x < n; x++){
+            er.set(0, x, ermat.get(k, x));
+        }
+        std::cout << "one coresponding error is " << er << "\n";     
+    }
+    else{
+        std::cout << "last line is not approate error" << "\n";
+        std::cout << ermat << "\n";
+    }
+    
 
     //find all coresponding errors
-    int num_alpha = pow(2,k);
+    int num_alpha = pow(2,k)-1;
     int wt, min_wt, count;
     itpp::GF2mat all_er(num_alpha,k);
-    itpp::bvec ertemp, zero;
+    itpp::bvec ertemp(n), zero(n);
 
-    for (int i = 0; i < num_alpha; i++){
+    for (int m = 1; m <= num_alpha; m++){
 
-        all_er.set_row(i, binary_num(k,i+1));
+        all_er.set_row(m-1, binary_num(k,m));
     }
 
     all_er = itpp::operator*(all_er,g);
@@ -60,21 +76,21 @@ int main(int argc, char **argv){
     min_wt = num_alpha;
     count = 0;
     zero.zeros();
-    for (int i = 0; i < num_alpha; i++){
+    for (int p = 1; p <= num_alpha; p++){
         ertemp.zeros();
-        ertemp = all_er.get_row(i) + er.get_row(0);
-        all_er.set_row(i,ertemp); 
+        ertemp = all_er.get_row(p-1) + er.get_row(0);
+        all_er.set_row(p-1,ertemp); 
         wt = itpp::BERC::count_errors(ertemp, zero);
-        std::cout << ertemp << "\n";
-        std::cout << wt << "\n";
+        //std::cout << all_er.get_row(i-1) << "\n";
+        //std::cout << wt << "," << min_wt << "\n";
         if (wt < min_wt){
             min_wt = wt;
-            count = i;
+            count = p;
         }
     }
 
     //std::cout << "all errors are " << all_er << "\n";
-    std::cout << "minium weight error is " << all_er.get_row(count) << "with weight" << min_wt <<".\n";
+    std::cout << "minium weight error is " << all_er.get_row(count) << "with weight " << min_wt <<".\n";
     return 0;
     
 }
