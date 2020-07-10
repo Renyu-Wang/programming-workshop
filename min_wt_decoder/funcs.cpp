@@ -1,8 +1,7 @@
 #include <iostream>
 #include <itpp/itbase.h>
 
-//using namespace itpp;
-
+// write a number into binary form
 itpp::bvec binary_num(int r1, int x1){
 
     itpp::bvec co(r1);
@@ -19,7 +18,7 @@ itpp::bvec binary_num(int r1, int x1){
     return co;
 
 } 
-
+//write the parity check matrix of hamming code
 itpp::GF2mat write_h(int r2, int n2){
 
     itpp::GF2mat h2(r2,n2);
@@ -32,3 +31,13 @@ itpp::GF2mat write_h(int r2, int n2){
     return h2;
 }
 
+//return H such that GH^T = 0, and rank G + rank H = n = full rank
+//by weilei
+itpp::GF2mat nullSpace(itpp::GF2mat G){
+    itpp::GF2mat T,U; itpp::ivec P;
+    int n=G.cols();
+    int rank_of_G = G.transpose().T_fact(T,U,P);
+    //  itpp::GF2matPrint(T,"T");
+    itpp::GF2mat Q=T.get_submatrix(rank_of_G,0,n-1,n-1);
+    return Q;
+}
